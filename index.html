@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="BMI">
+    <h2>Calculate your BMI</h2>
+    <input type="range" min="0" max="1000" id="we1" onchange="range()">
+    <div class="dis">
+    <p>WEIGHT</p>
+    <div class="wgt"></div>
+    <p>kg</p>
+    </div>
+    <input type="range" min="0" max="1000" id="we2" onchange="range()">
+    <div class="ply">
+    <p>HEIGHT</p>
+    <div class="hgt"></div>
+    <p>cm</p>
+    </div>
+    <div>
+    <button type="submit" class="cal" onclick="Calculate()">CALCULATE</button>
+    </div>
+     <h3>Your BMI:<p id="ans"></p></h3>
+    </div>
+</body>
+<script>
+    function range(){
+        let biger=document.querySelector("#we1").value
+        let taller=document.querySelector("#we2").value
+        let we1=document.querySelector(".wgt")
+        let we2=document.querySelector(".hgt")
+        we1.innerHTML=biger
+        we2.innerHTML=taller
+    }
+        function Calculate(){
+        let a=document.getElementById("we1").value;
+        let b=document.getElementById("we2").value;
+        let bmi = (a/((b *b) / 10000)).toFixed(2);
+        ans.innerHTML=bmi;
+    }
+    
+
+</script>
+
+</html>

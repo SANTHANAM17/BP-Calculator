@@ -1,0 +1,47 @@
+.cal{
+    display: flex;
+    color: white;
+    background-color: rgba(224, 138, 17, 0.868);
+    justify-content: space-evenly;
+    width: 200px;
+    border: none;
+}
+.wgt{
+    display: flex;
+    padding-right:5px;
+    width: 45px;
+    background-color: rgba(0, 0, 0, 0.163);
+    color:black;
+    height: 30px;
+}
+.hgt{
+    width: 45px;
+    height: 30px;
+    padding-right: 5px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.159);
+}
+.dis{
+    display: flex;
+    gap: 20px;
+}
+.ply{
+    display: flex;
+    gap: 20px;
+}
+#ans
+{
+    position: absolute;
+    left: 150px;
+    top:242px;  
+}
+body{
+    border: 1px solid;
+    width: 320px;
+    height: 350px;
+    display: flex;
+    justify-content:center;
+    position: absolute;
+    top:180px;
+    left: 600px;
+}
